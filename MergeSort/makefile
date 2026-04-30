@@ -1,8 +1,8 @@
-all: preencher.o imprimir.o mergesort.o merge.o mergeSort.o
-	gcc preencher.o imprimir.o mergesort.o merge.o mergeSort.o -o merge
+all: preencher.o imprimir.o mergesort.o merge.o main.o
+	gcc preencher.o imprimir.o mergesort.o merge.o main.o -o merge
 
-mergeSort.o: mergeSort.c cabecalho.h
-	gcc -Wall -c mergeSort.c 
+main.o: main.c cabecalho.h
+	gcc -Wall -c main.c 
 
 merge.o: merge.c cabecalho.h
 	gcc -Wall -c merge.c 

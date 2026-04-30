@@ -1,8 +1,8 @@
-all: selectionSort.o funcaoSelec.o imprimir.o
-	gcc selectionSort.o funcaoSelec.o imprimir.o -o selec
+all: main.o funcaoSelec.o imprimir.o
+	gcc main.o funcaoSelec.o imprimir.o -o selec
 
-selectionSort.o: selectionSort.c cabecalho.h
-	gcc -Wall -c selectionSort.c 
+main.o: main.c cabecalho.h
+	gcc -Wall -c main.c 
 
 funcaoSelec.o: funcaoSelec.c cabecalho.h
 	gcc -Wall -c funcaoSelec.c 
